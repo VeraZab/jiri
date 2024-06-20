@@ -1,4 +1,4 @@
-import './ui/global.modules.css';
+import '/styles/global.modules.css';
 
 export const metadata = {
   title: 'Jiri Kilevnik',

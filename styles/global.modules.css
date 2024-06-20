@@ -16,3 +16,9 @@ body {
     width: 100%;
     height: 600px;
 }
+
+.about-section {
+    display: block;
+    width: 100%;
+    height: auto;
+}
