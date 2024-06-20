@@ -1,22 +1,18 @@
-import LikeButton from './LikeButton';
-
-function Header({ title }) {
-    return <h1>{title ? title : 'Default title'}</h1>;
-}
+import Header from "./Header";
 
 export default function HomePage() {
-    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
-
     return (
         <div>
-            <Header title="Develop. Preview. Ship." />
-            <ul>
-                {names.map((name) => (
-                    <li key={name}>{name}</li>
-                ))}
-            </ul>
-
-            <LikeButton />
+            <Header />
+            <div id="content">
+                <iframe
+                    id="showreel"
+                    src="https://www.youtube.com/embed/O4fJxENtxxc?playlist=O4fJxENtxxc&autoplay=1&rel=0"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                />
+            </div>
         </div>
     );
 }
