@@ -15,9 +15,9 @@ export default function HomePage() {
                         allowfullscreen
                     />
                 </div>
-                <div className="about-section">
+                {/* <div className="about-section">
                     <Image src="/images/throne.webp" fill />
-                </div>
+                </div> */}
             </div>
         </div>
     );
