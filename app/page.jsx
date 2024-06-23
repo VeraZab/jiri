@@ -1,9 +1,10 @@
 import Header from "./Header";
 import Image from 'next/image';
 
+
 export default function HomePage() {
     return (
-        <div>
+        <div id="full">
             <Header />
             <div id="content">
                 <div className="section">
@@ -15,9 +16,9 @@ export default function HomePage() {
                         allowfullscreen
                     />
                 </div>
-                {/* <div className="about-section">
-                    <Image src="/images/throne.webp" fill />
-                </div> */}
+                <div className="about-section">
+                    <Image src="/images/throne.webp" layout="fill" objectFit="cover" objectPosition="top" style={{ position: "absolute", top: "-200px", height: "100%" }} />
+                </div>
             </div>
         </div>
     );
