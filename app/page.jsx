@@ -4,22 +4,21 @@ import Image from 'next/image';
 
 export default function HomePage() {
     return (
-        <div id="full">
+        <div>
             <Header />
             <div id="content">
-                <div className="section">
+                <section id="showreel">
                     <iframe
-                        id="showreel"
                         src="https://www.youtube.com/embed/O4fJxENtxxc?playlist=O4fJxENtxxc&autoplay=1&rel=0"
                         frameborder="0"
                         allow="autoplay; encrypted-media"
                         allowfullscreen
                     />
-                </div>
-                <div className="about-section">
-                    <Image src="/images/throne.webp" layout="fill" objectFit="cover" objectPosition="top" style={{ position: "absolute", top: "-200px", height: "100%" }} />
-                </div>
+                </section>
+                <section id="about">
+                    <Image src="/images/throne.webp" layout="fill" />
+                </section>
             </div>
-        </div>
+        </div >
     );
 }
