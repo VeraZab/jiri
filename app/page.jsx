@@ -7,7 +7,7 @@ export default function HomePage() {
         <div>
             <Header />
             <div id="content">
-                <section id="showreel">
+                <section id="showreel" >
                     <iframe
                         src="https://www.youtube.com/embed/O4fJxENtxxc?playlist=O4fJxENtxxc&rel=0"
                         frameborder="0"
