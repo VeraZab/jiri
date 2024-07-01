@@ -1,5 +1,5 @@
 import '/styles/reset.modules.css';
-import '/styles/global.modules.css';
+import '/styles/page.modules.css';
 
 export const metadata = {
   title: 'Jiri Kilevnik',
