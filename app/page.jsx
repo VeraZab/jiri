@@ -1,5 +1,7 @@
+import '/styles/main.modules.css';
+import Carousel from "./Carousel";
 import Header from "./Header";
-import Image from 'next/image';
+// import Image from 'next/image';
 
 
 export default function HomePage() {
@@ -37,6 +39,12 @@ export default function HomePage() {
                                 "Unreal Engine, Maya, vfx and on-set supervision, compositing, " +
                                 "motion desing, artificial inteligence."}
                         </p>
+                    </div>
+                </section>
+                <section id="ai-projects">
+                    <h1>AI Projects</h1>
+                    <div className='carousel-wrapper'>
+                        <Carousel />
                     </div>
                 </section>
             </div>

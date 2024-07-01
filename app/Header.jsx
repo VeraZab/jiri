@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <div id="header">
-            <div>Jiri Kilevnik</div>
+            <h1>Jiri Kilevnik</h1>
         </div>
     );
 }
