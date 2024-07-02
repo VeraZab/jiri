@@ -1,6 +1,7 @@
 import '/styles/main.modules.css';
 import Carousel from "./Carousel";
 import Header from "./Header";
+import Section from './Section';
 // import Image from 'next/image';
 
 
@@ -9,15 +10,15 @@ export default function HomePage() {
         <div>
             <Header />
             <div id="content">
-                <section id="showreel" >
+                <Section id="showreel" >
                     <iframe
                         src="https://www.youtube.com/embed/O4fJxENtxxc?playlist=O4fJxENtxxc&rel=0"
                         frameborder="0"
                         allow="autoplay; encrypted-media"
                         allowfullscreen
                     />
-                </section>
-                <section id="about" className="bg-img" style={{ backgroundImage: "url('/images/throne.webp')" }}>
+                </Section>
+                <Section id="about" backgroundImage="/images/throne.webp">
                     <div className="caption">
                         <p>
                             {"I'm an award-winning visual effects supervisor " +
@@ -40,13 +41,23 @@ export default function HomePage() {
                                 "motion desing, artificial inteligence."}
                         </p>
                     </div>
-                </section>
-                <section id="ai-projects">
-                    <h1>AI Projects</h1>
+                </Section>
+                <Section id="ai-projects" title="AI Projects">
                     <div className='carousel-wrapper'>
                         <Carousel />
                     </div>
-                </section>
+                </Section>
+                <Section id="ai-projects" title="Advertising Projects">
+                    <div className='carousel-wrapper'>
+                        <Carousel />
+                    </div>
+                </Section>
+                <Section id="ai-projects" title="Filmography">
+                    <div className='carousel-wrapper'>
+                        <Carousel />
+                    </div>
+                </Section>
+                <div style={{ backgroundColor: 'green' }}>Contact</div>
             </div>
         </div >
     );

@@ -1,0 +1,12 @@
+section {
+    max-width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
+.bg-img {
+    background-attachment: fixed;
+    background-position: 0% 23%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
