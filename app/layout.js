@@ -1,5 +1,6 @@
 import '/styles/reset.modules.css';
-
+import Header from "./Header";
+import Footer from "./Footer";
 
 export const metadata = {
   title: 'Jiri Kilevnik',
@@ -16,7 +17,12 @@ export default function RootLayout({ children }) {
         <title>Jiri Kilevnik</title>
         {/* <link rel="icon" href="./ui/favicon.ico" type="image/x-icon" /> */}
       </head>
-      <body>{children}</body>
+
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
