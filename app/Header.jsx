@@ -11,9 +11,9 @@ export default function Header() {
             </div>
             <h1><a href="/" >Jiri Kilevnik</a ></h1>
             <div className='right desktop'>
-                <a href='#'><img src="/images/linkedin.svg" alt="LinkedIn" /></a>{""}
-                <a href='#'><img src="/images/imdb.svg" alt="Imdb" /></a>{""}
-                <a href='#'><img src="/images/envelope.svg" alt="Email" /></a>{""}
+                <a href='https://www.linkedin.com/in/jiri-kilevnik-48a0584b/' target="_blank"><img src="/images/linkedin.svg" alt="LinkedIn" /></a>{""}
+                <a href='https://www.imdb.com/name/nm8945630/?ref_=nv_sr_srsg_4' target="_blank"><img src="/images/imdb.svg" alt="Imdb" /></a>{""}
+                <a href='mailto:kilevnik@gmail.com' target="_blank"><img src="/images/envelope.svg" alt="Email" /></a>{""}
             </div>
         </div >
     );
