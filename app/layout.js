@@ -1,6 +1,7 @@
 import '/styles/reset.modules.css';
+import '/styles/main.modules.css';
 import Header from "./Header";
-import Footer from "./Footer";
+
 
 export const metadata = {
   title: 'Jiri Kilevnik',
@@ -19,9 +20,14 @@ export default function RootLayout({ children }) {
       </head>
 
       <body>
-        <Header />
-        {children}
+        <div className='content-container'>
+          <Header />
+          <main>
+            {children}
+          </main>
+        </div>
       </body>
+
     </html>
   )
 }
