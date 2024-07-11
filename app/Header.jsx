@@ -16,6 +16,7 @@ export default function Header() {
                 <Link href='https://www.imdb.com/name/nm8945630/?ref_=nv_sr_srsg_4' target="_blank"><img src="/images/imdb.svg" alt="Imdb" /></Link>{""}
                 <Link href='mailto:kilevnik@gmail.com' target="_blank"><img src="/images/envelope.svg" alt="Email" /></Link>{""}
             </div>
+            <div className="mobile">x</div>
         </div >
     );
 }

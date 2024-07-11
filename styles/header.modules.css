@@ -4,19 +4,22 @@
     top: 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 1rem;
     z-index: 1;
     background: rgb(255, 255, 255, 0.55);
 }
 
+.mobile {
+    display: none;
+}
+
 .left {
-    margin-right: auto;
     width: 33%;
 }
 
 .right {
-    margin-left: auto;
+
     width: 33%;
     text-align: right;
 }
@@ -37,9 +40,21 @@ a {
     padding-right: 1rem;
 }
 
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.right a {
+    display: inline-flex;
+    align-items: center;
+}
+
 .right img {
     width: 25px;
     display: inline;
+
 }
 
 .right a:last-child {
@@ -51,4 +66,33 @@ a {
     text-underline-offset: 0.5rem;
     text-decoration-color: var(--color-yellow-200);
     text-decoration-thickness: 0.25rem;
+}
+
+@media (max-width: 1250px) {
+    .left {
+        width: 50%;
+    }
+
+    .right,
+    h1 {
+        width: 25%;
+    }
+
+    h1 {
+        text-align: left;
+    }
+}
+
+@media (max-width: 835px) {
+    .desktop {
+        display: none;
+    }
+
+    h1 {
+        width: unset;
+    }
+
+    .mobile {
+        display: block;
+    }
 }
