@@ -48,5 +48,7 @@ a {
 
 .left a:hover {
     text-decoration: underline;
-    text-underline-offset: 8px;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: var(--color-yellow-200);
+    text-decoration-thickness: 0.25rem;
 }
