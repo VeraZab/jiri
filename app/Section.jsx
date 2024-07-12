@@ -1,10 +1,10 @@
-import '/styles/section.modules.css';
+import styles from '/styles/section.module.css';
 import PropTypes from 'prop-types';
 
 export default function Section({ children, id, backgroundImage }) {
     return (
         <section
-            className={backgroundImage ? 'bg-img' : ''}
+            className={backgroundImage ? `${styles.container} ${styles.bgImg}` : styles.container}
             id={id}
             style={{ backgroundImage: backgroundImage ? `url(${backgroundImage})` : "" }}
         >

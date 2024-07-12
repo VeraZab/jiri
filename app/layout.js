@@ -1,5 +1,5 @@
-import '/styles/reset.modules.css';
-import '/styles/main.modules.css';
+import '/styles/reset.css';
+import '/styles/global.css';
 import Header from "./Header";
 
 
@@ -27,7 +27,6 @@ export default function RootLayout({ children }) {
           </main>
         </div>
       </body>
-
     </html>
   )
 }

@@ -17,7 +17,6 @@ body {
 
 }
 
-
 .content-container {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -30,6 +29,11 @@ main {
     overflow: auto;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 p {
     margin: 18px;
 }
@@ -37,11 +41,4 @@ p {
 h1 {
     font-size: 1.5em;
     padding: 0.5em;
-}
-
-#about .caption {
-    color: black;
-    width: 40%;
-    padding: 3rem;
-    margin-left: 40%;
 }

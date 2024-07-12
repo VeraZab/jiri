@@ -1,4 +1,3 @@
-import '/styles/main.modules.css';
 import Section from './Section';
 // import Image from 'next/image';
 

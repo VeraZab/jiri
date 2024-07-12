@@ -1,11 +1,11 @@
-import '/styles/main.modules.css';
+import styles from '/styles/about.module.css';
 import Section from '../Section';
 // import Image from 'next/image';
 
 export default function HomePage() {
     return (
-        <Section id="about" backgroundImage="/images/throne.webp">
-            <div className="caption">
+        <Section backgroundImage="/images/throne.webp">
+            <div className={styles.caption}>
                 <p>
                     {"I'm an award-winning visual effects supervisor " +
                         "and compositing artist for over 16 years. "}
