@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div className={styles.header} >
             <div className={`${styles.left} ${styles.desktop}`}>
-                <Link href="#">AI Projects</Link> {"  "}
+                <Link href="/ai-projects">AI Projects</Link> {"  "}
                 <Link href="#">Advertising</Link> {"  "}
                 <Link href="#">Episodic</Link> {"  "}
                 <Link href="/about">About</Link>
