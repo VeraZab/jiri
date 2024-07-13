@@ -7,14 +7,14 @@ export default function AIProjects() {
     return (
         <div className={styles.container}>
             <PortfolioGrid>
-                <PortfolioImage src="" />
-                <PortfolioImage src="" />
-                <PortfolioImage src="" />
-                <PortfolioImage src="" />
-                <PortfolioImage src="" />
-                <PortfolioImage src="" />
-                <PortfolioImage src="" />
-                <PortfolioImage src="" />
+                <PortfolioImage src="/images/throne.webp" alt="" />
+                <PortfolioImage src="/images/throne.webp" alt="" />
+                <PortfolioImage src="/images/throne.webp" alt="" />
+                <PortfolioImage src="/images/throne.webp" alt="" />
+                <PortfolioImage src="/images/throne.webp" alt="" />
+                <PortfolioImage src="/images/throne.webp" alt="" />
+                <PortfolioImage src="/images/throne.webp" alt="" />
+                <PortfolioImage src="/images/throne.webp" alt="" />
             </PortfolioGrid>
         </div>
     );
