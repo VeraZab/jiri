@@ -1,43 +1,11 @@
 .container {
-    flex: 1 0 calc(25% - 1rem);
-    max-width: calc(25% - 1rem);
+    flex: 1 1 300px;
     height: 500px;
     background-color: aqua;
     border-radius: 4px;
     position: relative;
     overflow: hidden;
     object-fit: cover;
-    margin-right: 1rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
-}
-
-.container:nth-child(4n) {
-    margin-right: 0;
-}
-
-@media (max-width: 1250px) {
-    .container {
-        flex: 1 0 calc(33.333% - 1rem);
-        max-width: calc(33.333% - 1rem);
-    }
-
-    .container:nth-child(4n) {
-        margin-right: 1rem;
-    }
-
-    .container:nth-child(3n) {
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 835px) {
-    .container {
-        flex: 1 0 100%;
-        max-width: 100%;
-        margin-right: 0;
-    }
-
-    .container:nth-child(4n) {
-        margin-right: 0rem;
-    }
 }
