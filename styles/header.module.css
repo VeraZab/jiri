@@ -63,6 +63,11 @@
     text-decoration-thickness: 0.25rem;
 }
 
+.mobileIconContainer svg {
+    width: 25px !important;
+    height: 25px !important;
+}
+
 @media (max-width: 1250px) {
     .left {
         width: 50%;

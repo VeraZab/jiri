@@ -1,5 +1,7 @@
 import styles from '/styles/header.module.css';
 import Link from 'next/link';
+import { RowsIcon } from '@radix-ui/react-icons'
+import Button from './Button';
 
 export default function Header() {
     return (
@@ -16,7 +18,13 @@ export default function Header() {
                 <Link href='https://www.imdb.com/name/nm8945630/?ref_=nv_sr_srsg_4' target="_blank"><img src="/images/imdb.svg" alt="Imdb" /></Link>{""}
                 <Link href='mailto:kilevnik@gmail.com' target="_blank"><img src="/images/envelope.svg" alt="Email" /></Link>{""}
             </div>
-            <div className={styles.mobile}>x</div>
+            <div className={styles.mobile}>
+                <Button onClick={() => { }}>
+                    <div className={styles.mobileIconContainer}>
+                        <RowsIcon />
+                    </div>
+                </Button>
+            </div>
         </div >
     );
 }
