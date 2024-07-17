@@ -90,9 +90,14 @@
 
     .title {
         width: unset;
+        padding-left: 0;
     }
 
     .mobile {
         display: block;
+    }
+
+    .mobile button {
+        margin-right: -0.5rem;
     }
 }
