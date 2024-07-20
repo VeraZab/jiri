@@ -1,9 +1,14 @@
+'use client';
+
 import styles from '/styles/header.module.css';
 import Link from 'next/link';
 import { RowsIcon } from '@radix-ui/react-icons'
 import Button from './Button';
+import { useState } from 'react';
 
 export default function Header() {
+    let [mobileOpen, setMobileOpen] = useState(false);
+
     return (
         <div className={styles.header} >
             <div className={`${styles.left} ${styles.desktop}`}>
@@ -19,12 +24,19 @@ export default function Header() {
                 <Link href='mailto:kilevnik@gmail.com' target="_blank"><img src="/images/envelope.svg" alt="Email" /></Link>{""}
             </div>
             <div className={styles.mobile}>
-                <Button onClick={() => { }}>
+                <Button
+                    onClick={() => {
+                        setMobileOpen(!mobileOpen)
+                    }}
+                >
                     <div className={styles.mobileIconContainer}>
                         <RowsIcon />
                     </div>
                 </Button>
             </div>
+            {mobileOpen && (
+                <div className={styles.mobileMenu}>ok</div>
+            )}
         </div >
     );
 }

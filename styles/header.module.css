@@ -68,6 +68,11 @@
     height: 25px !important;
 }
 
+.mobileMenu {
+    color: white;
+    display: none;
+}
+
 @media (max-width: 1250px) {
     .left {
         width: 50%;
@@ -99,5 +104,14 @@
 
     .mobile button {
         margin-right: -0.5rem;
+    }
+
+    .mobileMenu {
+        display: block;
+        position: fixed;
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
     }
 }
