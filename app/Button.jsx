@@ -1,9 +1,9 @@
 import styles from '/styles/button.module.css';
 import PropTypes from 'prop-types';
 
-export default function Button({ children, onClick }) {
+export default function Button({ children, props }) {
     return (
-        <button onClick={onClick} className={styles.container}>
+        <button className={styles.container} {...props}>
             {children}
         </button>
     );

@@ -1,13 +1,14 @@
 'use client';
 
-import styles from '/styles/header.module.css';
-import Link from 'next/link';
+import { Cross2Icon } from '@radix-ui/react-icons';
 import { RowsIcon } from '@radix-ui/react-icons'
-import Button from './Button';
 import { useState } from 'react';
+import * as Dialog from '@radix-ui/react-dialog';
+import Button from './Button';
+import Link from 'next/link';
+import styles from '/styles/header.module.css';
 
 export default function Header() {
-    let [mobileOpen, setMobileOpen] = useState(false);
 
     return (
         <div className={styles.header} >
@@ -23,20 +24,26 @@ export default function Header() {
                 <Link href='https://www.imdb.com/name/nm8945630/?ref_=nv_sr_srsg_4' target="_blank"><img src="/images/imdb.svg" alt="Imdb" /></Link>{""}
                 <Link href='mailto:kilevnik@gmail.com' target="_blank"><img src="/images/envelope.svg" alt="Email" /></Link>{""}
             </div>
-            <div className={styles.mobile}>
-                <Button
-                    onClick={() => {
-                        setMobileOpen(!mobileOpen)
-                    }}
-                >
+
+            <Dialog.Root className={styles.mobile}>
+                <Dialog.Trigger asChild className={styles.mobile}>
                     <div className={styles.mobileIconContainer}>
                         <RowsIcon />
                     </div>
-                </Button>
-            </div>
-            {mobileOpen && (
-                <div className={styles.mobileMenu}>ok</div>
-            )}
+                </Dialog.Trigger>
+                <Dialog.Portal asChild className={styles.MobilePortal}>
+                    <div className={styles.mobile}>
+                        <Dialog.Close asChild>
+                            <button className={styles.MobileCloseButton} aria-label="Close">
+                                <Cross2Icon />
+                            </button>
+                        </Dialog.Close>
+                        <Dialog.Content className={styles.DialogContent}>
+                            Hey show me!!
+                        </Dialog.Content>
+                    </div>
+                </Dialog.Portal>
+            </Dialog.Root>
         </div >
     );
 }
