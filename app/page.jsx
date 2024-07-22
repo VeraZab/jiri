@@ -1,12 +1,8 @@
-import Section from './Section';
-// import Image from 'next/image';
+import { redirect } from 'next/navigation'
 
 export default function HomePage() {
+    redirect('/ai-projects')
     return (
-        <div id="content">
-
-
-
-        </div>
+        <div />
     );
 }
