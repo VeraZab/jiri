@@ -1,22 +1,22 @@
 'use client';
 
-import { Cross2Icon } from '@radix-ui/react-icons';
-import { RowsIcon } from '@radix-ui/react-icons'
-import { useState } from 'react';
+import { Cross2Icon, RowsIcon } from '@radix-ui/react-icons';
+import { usePathname } from 'next/navigation'
 import * as Dialog from '@radix-ui/react-dialog';
-import Button from './Button';
 import Link from 'next/link';
+
 import styles from '/styles/header.module.css';
 
 export default function Header() {
+    const pathname = usePathname();
 
     return (
         <div className={styles.header} >
             <div className={`${styles.left} ${styles.desktop}`}>
-                <Link href="/ai-projects">AI Projects</Link> {"  "}
-                <Link href="#">Advertising</Link> {"  "}
-                <Link href="#">Episodic</Link> {"  "}
-                <Link href="/about">About</Link>
+                <Link className={pathname === '/ai-projects' ? styles.active : ''} href="/ai-projects">AI Projects</Link> {"  "}
+                <Link className={pathname === '/advertising' ? styles.active : ''} href="/advertising">Advertising</Link> {"  "}
+                <Link className={pathname === '/episodic' ? styles.active : ''} href="/episodic">Episodic</Link> {"  "}
+                <Link className={pathname === '/about' ? styles.active : ''} href="/about">About</Link>
             </div>
             <h1 className={styles.title}><Link href="/" >Jiri Kilevnik</Link></h1>
             <div className={`${styles.right} ${styles.desktop}`}>

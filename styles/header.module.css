@@ -56,7 +56,8 @@
     padding-right: 0;
 }
 
-.left a:hover {
+.left a:hover,
+.left a.active {
     text-decoration: underline;
     text-underline-offset: 0.5rem;
     text-decoration-color: var(--color-yellow-200);
