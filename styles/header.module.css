@@ -101,15 +101,17 @@
         display: block;
     }
 
-    .mobile button {
+    button.mobileAction {
         margin-right: -0.5rem;
+        background: transparent;
+        border: none;
     }
 
-    .MobilePortal {
+    .mobilePortal {
         color: white !important;
     }
 
-    .DialogContent {
+    .dialogContent {
         background-color: black;
         position: fixed;
         top: 0;
@@ -122,14 +124,12 @@
         color: white;
     }
 
-    .MobileCloseButton {
+    .closeButton {
         position: fixed;
-        top: 2rem;
-        right: 2rem;
+        top: 1.25rem;
+        right: 1rem;
         align-self: flex-end;
         color: white;
         z-index: 3;
-        background: transparent;
-        border: none;
     }
 }

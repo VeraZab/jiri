@@ -25,25 +25,22 @@ export default function Header() {
                 <Link href='mailto:kilevnik@gmail.com' target="_blank"><img src="/images/envelope.svg" alt="Email" /></Link>{""}
             </div>
 
-            <Dialog.Root className={styles.mobile}>
-                <Dialog.Trigger asChild className={styles.mobile}>
-                    <div className={styles.mobileIconContainer}>
+            <Dialog.Root >
+                <div className={styles.mobile}>
+                    <Dialog.Trigger className={`${styles.mobileIconContainer} ${styles.mobileAction}`} >
                         <RowsIcon />
-                    </div>
-                </Dialog.Trigger>
-                <Dialog.Portal asChild className={styles.MobilePortal}>
-                    <div className={styles.mobile}>
-                        <Dialog.Close asChild>
-                            <button className={styles.MobileCloseButton} aria-label="Close">
+                    </Dialog.Trigger>
+                    <Dialog.Portal asChild className={styles.mobilePortal}>
+                        <Dialog.Content className={styles.dialogContent}>
+                            <Dialog.Close className={`${styles.mobileIconContainer} ${styles.mobileAction} ${styles.closeButton}`} aria-label="Close">
                                 <Cross2Icon />
-                            </button>
-                        </Dialog.Close>
-                        <Dialog.Content className={styles.DialogContent}>
+                            </Dialog.Close>
                             Hey show me!!
                         </Dialog.Content>
-                    </div>
-                </Dialog.Portal>
-            </Dialog.Root>
+
+                    </Dialog.Portal>
+                </div>
+            </Dialog.Root >
         </div >
     );
 }
