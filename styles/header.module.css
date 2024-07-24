@@ -133,4 +133,21 @@
         color: white;
         z-index: 3;
     }
+
+    .mobileLinks {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .mobileLinks a {
+        color: inherit;
+    }
+
+    .socialMobileLinksContainer {
+        display: flex;
+        flex-direction: row;
+    }
 }
