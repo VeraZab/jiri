@@ -5,7 +5,6 @@
     border-radius: 4px;
     position: relative;
     overflow: hidden;
-    object-fit: cover;
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
