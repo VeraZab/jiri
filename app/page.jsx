@@ -1,8 +1,8 @@
-import { redirect } from 'next/navigation'
+import PortfolioPageLayout from "./PortfolioPageLayout";
+
 
 export default function HomePage() {
-    redirect('/ai-projects')
     return (
-        <div />
+        <PortfolioPageLayout >REEL VIDEO</PortfolioPageLayout>
     );
 }

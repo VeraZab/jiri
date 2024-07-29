@@ -18,10 +18,7 @@ body {
 }
 
 .content-container {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    min-height: 100vh;
-    min-height: 100svh;
+    height: 100%;
     background-color: var(--color-gray-100);
 }
 

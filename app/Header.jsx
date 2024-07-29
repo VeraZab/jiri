@@ -45,6 +45,9 @@ const NavigationLinks = ({ isMobile }) => {
                 <Link className={pathname === '/episodic' ? styles.active : ''} href="/episodic">Episodic</Link>
             </LinkWrapper>
             <LinkWrapper isMobile={isMobile}>
+                <Link className={pathname === '/film' ? styles.active : ''} href="/film">Film</Link>
+            </LinkWrapper>
+            <LinkWrapper isMobile={isMobile}>
                 <Link className={pathname === '/about' ? styles.active : ''} href="/about">About</Link>
             </LinkWrapper>
         </>
