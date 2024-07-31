@@ -2,21 +2,36 @@ import styles from '/styles/portfolioimage.module.css';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 
-export default function PortfolioImage({ src, alt, url, text }) {
+const PortfolioLinkWrapper = ({ externalUrl, children }) => {
+    if (externalUrl) {
+        return (
+            <a
+                href={externalUrl ? externalUrl : ""}
+                target="_blank"
+                className={styles.link}>
+                {children}
+            </a>
+        )
+    }
+
+    return (
+        <div className={styles.link}>
+            {children}
+        </div>
+    )
+}
+
+export default function PortfolioImage({ src, alt, externalUrl, text }) {
     return (
         <div className={styles.container}>
-
-
-            <a href={url} target="_blank" className={styles.link}>
+            <PortfolioLinkWrapper externalUrl={externalUrl}>
                 <Image src={src} fill alt={alt} style={{ objectFit: 'cover' }} />
                 {text ? (
                     <div className={styles.innerTextContainer}>
                         <div className={styles.text}>{text}</div>
                     </div>
                 ) : null}
-            </a>
-
-
+            </PortfolioLinkWrapper>
         </div >
     );
 }
@@ -24,7 +39,7 @@ export default function PortfolioImage({ src, alt, url, text }) {
 PortfolioImage.PropTypes = {
     src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
-    url: PropTypes.string,
+    externalUrl: PropTypes.string,
     text: PropTypes.string,
 }
 
