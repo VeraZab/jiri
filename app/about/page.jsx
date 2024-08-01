@@ -8,8 +8,8 @@ export default function HomePage() {
             <div className={styles.container}>
                 <div className={styles.caption}>
                     <p>
-                        {"I'm an award-winning visual effects supervisor " +
-                            "and compositing artist for over 16 years. "}
+                        {"I am an award-winning visual effects supervisor and " +
+                            "compositing artist with over 16 years of experience. "}
                     </p>
                     <p>
                         {
@@ -29,34 +29,13 @@ export default function HomePage() {
                     </p>
                     <p>
                         <b>
-                            Professional experience:
+                            Awards:
                         </b>
 
                         {
-                            " Flame, Nuke, After Effects, " +
-                            "Unreal Engine, Maya, vfx and on-set supervision, compositing, " +
-                            "motion desing, artificial inteligence."}
+                            " VES Awards Nomination, Cannes Lions, VR Fest Winner, AEAF2020, Promax BDA, The One Show, D&D"}
                     </p>
-                    <p>
-                        <b>
-                            Professional experience:
-                        </b>
 
-                        {
-                            " Flame, Nuke, After Effects, " +
-                            "Unreal Engine, Maya, vfx and on-set supervision, compositing, " +
-                            "motion desing, artificial inteligence."}
-                    </p>
-                    <p>
-                        <b>
-                            Professional experience:
-                        </b>
-
-                        {
-                            " Flame, Nuke, After Effects, " +
-                            "Unreal Engine, Maya, vfx and on-set supervision, compositing, " +
-                            "motion desing, artificial inteligence."}
-                    </p>
                 </div>
             </div>
 
