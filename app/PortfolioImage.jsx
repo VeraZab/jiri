@@ -36,7 +36,7 @@ export default function PortfolioImage({ src, alt, externalUrl, text }) {
     );
 }
 
-PortfolioImage.PropTypes = {
+PortfolioImage.propTypes = {
     src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     externalUrl: PropTypes.string,

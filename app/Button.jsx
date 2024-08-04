@@ -9,7 +9,7 @@ export default function Button({ children, props }) {
     );
 }
 
-Button.PropTypes = {
+Button.propTypes = {
     children: PropTypes.node,
     onClick: PropTypes.func
 }

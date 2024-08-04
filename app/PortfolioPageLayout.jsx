@@ -9,7 +9,7 @@ export default function PortfolioPageLayout({ children }) {
     );
 }
 
-PortfolioPageLayout.PropTypes = {
+PortfolioPageLayout.propTypes = {
     children: PropTypes.node,
 }
 

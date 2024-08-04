@@ -13,7 +13,7 @@ export default function Section({ children, id, backgroundImage }) {
     );
 }
 
-Section.PropTypes = {
+Section.propTypes = {
     children: PropTypes.node,
     id: PropTypes.string.isRequired,
     backgroundImage: PropTypes.string,

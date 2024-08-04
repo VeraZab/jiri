@@ -89,11 +89,11 @@ export default function Header() {
     );
 }
 
-NavigationLinks.PropTypes = {
+NavigationLinks.propTypes = {
     isMobile: PropTypes.bool,
 }
 
-LinkWrapper.PropTypes = {
+LinkWrapper.propTypes = {
     isMobile: PropTypes.bool,
     children: PropTypes.node.isRequired
 }

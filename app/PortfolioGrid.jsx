@@ -9,7 +9,7 @@ export default function PortfolioGrid({ children }) {
     );
 }
 
-PortfolioGrid.PropTypes = {
+PortfolioGrid.propTypes = {
     children: PropTypes.node,
 }
 
