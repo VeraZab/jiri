@@ -45,6 +45,12 @@ export default function AdvertisingProjects() {
                     text="Slipknot: Unsainted"
                     externalUrl="https://www.rodeofx.com/project/slipknot-unsainted"
                 />
+                <PortfolioImage
+                    src="/images/flight-center2.webp"
+                    alt="Flight Center: Be unbordered"
+                    text="Flight Center: Be unbordered"
+                    externalUrl="https://www.rodeofx.com/project/flight-centre-be-unborded"
+                />
 
 
             </PortfolioGrid>
