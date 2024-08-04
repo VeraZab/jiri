@@ -22,9 +22,10 @@ export default function AIProjects() {
                     externalUrl="https://www.youtube.com/watch?v=Oa1SpVpgW_c"
                 />
                 <PortfolioImage
-                    src="/images/weeknd.jpg"
+                    src="/images/weeknd.png"
                     alt="spotify x the weeknd - alone with me interractive experience"
                     externalUrl="https://www.oneclub.org/awards/younggunswork/-award/41434/the-weeknd-alone-with-me"
+                    text="Spotify x The Weeknd"
                 />
 
                 <PortfolioImage

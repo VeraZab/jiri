@@ -1,7 +1,7 @@
 .container {
     flex: 1 1 300px;
     height: 500px;
-    background-color: aqua;
+    background-color: var(--color-gray-300);
     border-radius: 4px;
     position: relative;
     overflow: hidden;
@@ -23,7 +23,11 @@
 
 .text {
     color: white;
-    font-size: 2rem;
+    font-size: 1.75rem;
     z-index: 1;
     padding: 1rem;
+}
+
+.link {
+    height: 100%;
 }

@@ -4,7 +4,7 @@ import PortfolioPageLayout from '../PortfolioPageLayout';
 
 export default function HomePage() {
     return (
-        <Section backgroundImage="/images/throne.webp">
+        <Section backgroundImage="/images/throne.png">
             <div className={styles.container}>
                 <div className={styles.caption}>
                     <p>
