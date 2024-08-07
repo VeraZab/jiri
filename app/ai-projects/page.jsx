@@ -1,6 +1,6 @@
-import PortfolioGrid from '../PortfolioGrid';
-import PortfolioImage from '../PortfolioImage';
-import PortfolioPageLayout from '../PortfolioPageLayout';
+import PortfolioGrid from '../PortfolioGrid'
+import PortfolioImage from '../PortfolioImage'
+import PortfolioPageLayout from '../PortfolioPageLayout'
 
 export default function AIProjects() {
     return (
@@ -36,6 +36,5 @@ export default function AIProjects() {
                 />
             </PortfolioGrid>
         </PortfolioPageLayout>
-    );
+    )
 }
-

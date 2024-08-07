@@ -1,16 +1,24 @@
-import styles from '/styles/section.module.css';
-import PropTypes from 'prop-types';
+import styles from '/styles/section.module.css'
+import PropTypes from 'prop-types'
 
 export default function Section({ children, id, backgroundImage }) {
     return (
         <section
-            className={backgroundImage ? `${styles.container} ${styles.bgImg}` : styles.container}
+            className={
+                backgroundImage
+                    ? `${styles.container} ${styles.bgImg}`
+                    : styles.container
+            }
             id={id}
-            style={{ backgroundImage: backgroundImage ? `url(${backgroundImage})` : "" }}
+            style={{
+                backgroundImage: backgroundImage
+                    ? `url(${backgroundImage})`
+                    : '',
+            }}
         >
             {children}
         </section>
-    );
+    )
 }
 
 Section.propTypes = {
@@ -18,4 +26,3 @@ Section.propTypes = {
     id: PropTypes.string.isRequired,
     backgroundImage: PropTypes.string,
 }
-

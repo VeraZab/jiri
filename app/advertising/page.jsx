@@ -1,6 +1,6 @@
-import PortfolioGrid from '../PortfolioGrid';
-import PortfolioImage from '../PortfolioImage';
-import PortfolioPageLayout from '../PortfolioPageLayout';
+import PortfolioGrid from '../PortfolioGrid'
+import PortfolioImage from '../PortfolioImage'
+import PortfolioPageLayout from '../PortfolioPageLayout'
 
 export default function AdvertisingProjects() {
     return (
@@ -51,9 +51,7 @@ export default function AdvertisingProjects() {
                     text="Flight Center: Be unbordered"
                     externalUrl="https://www.rodeofx.com/project/flight-centre-be-unborded"
                 />
-
-
             </PortfolioGrid>
         </PortfolioPageLayout>
-    );
+    )
 }

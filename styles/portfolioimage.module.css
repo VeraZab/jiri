@@ -11,7 +11,7 @@
 }
 
 .container:hover {
-    box-shadow: 0 4px 8px var(--color-gray-300)
+    box-shadow: 0 4px 8px var(--color-gray-300);
 }
 
 .innerTextContainer {

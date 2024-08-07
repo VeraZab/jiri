@@ -1,6 +1,6 @@
-import { forwardRef } from 'react';
-import styles from '/styles/reelvideo.module.css';
-import PropTypes from 'prop-types';
+import { forwardRef } from 'react'
+import styles from '/styles/reelvideo.module.css'
+import PropTypes from 'prop-types'
 
 const ReelVideo = forwardRef(({ src, muted }, ref) => {
     return (
@@ -17,12 +17,12 @@ const ReelVideo = forwardRef(({ src, muted }, ref) => {
             <source src={src} type="video/mp4" />
             Your browser does not support the video tag.
         </video>
-    );
-});
+    )
+})
 
 ReelVideo.propTypes = {
     src: PropTypes.string.isRequired,
     muted: PropTypes.bool.isRequired,
-};
+}
 
-export default ReelVideo;
+export default ReelVideo
