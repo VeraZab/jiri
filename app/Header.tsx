@@ -4,9 +4,9 @@ import { Cross2Icon, RowsIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons'
 import { usePathname } from 'next/navigation'
 import * as Dialog from '@radix-ui/react-dialog'
 import Link from 'next/link'
-import PropTypes from 'prop-types'
 
 import styles from '/styles/header.module.css'
+import { ReactNode } from 'react'
 
 const SocialLinks = () => {
     return (
@@ -33,14 +33,20 @@ const SocialLinks = () => {
     )
 }
 
-const LinkWrapper = ({ children, isMobile }) => {
+const LinkWrapper = ({
+    children,
+    isMobile,
+}: {
+    children: ReactNode
+    isMobile: boolean
+}) => {
     if (isMobile) {
         return <Dialog.Close asChild>{children}</Dialog.Close>
     }
     return children
 }
 
-const NavigationLinks = ({ isMobile }) => {
+const NavigationLinks = ({ isMobile }: { isMobile?: boolean }) => {
     const pathname = usePathname()
 
     return (
@@ -109,37 +115,30 @@ export default function Header() {
                     >
                         <RowsIcon />
                     </Dialog.Trigger>
-                    <Dialog.Portal asChild className={styles.mobilePortal}>
-                        <Dialog.Content className={styles.dialogContent}>
-                            <Dialog.Close
-                                className={`${styles.mobileIconContainer} ${styles.mobileAction} ${styles.closeButton}`}
-                                aria-label="Close"
-                            >
-                                <Cross2Icon />
-                            </Dialog.Close>
-                            <div className={styles.mobileLinks}>
-                                <NavigationLinks isMobile />
-                                <div
-                                    className={
-                                        styles.socialMobileLinksContainer
-                                    }
+                    <Dialog.Portal>
+                        <div className={styles.mobilePortal}>
+                            <Dialog.Content className={styles.dialogContent}>
+                                <Dialog.Close
+                                    className={`${styles.mobileIconContainer} ${styles.mobileAction} ${styles.closeButton}`}
+                                    aria-label="Close"
                                 >
-                                    <SocialLinks />
+                                    <Cross2Icon />
+                                </Dialog.Close>
+                                <div className={styles.mobileLinks}>
+                                    <NavigationLinks isMobile />
+                                    <div
+                                        className={
+                                            styles.socialMobileLinksContainer
+                                        }
+                                    >
+                                        <SocialLinks />
+                                    </div>
                                 </div>
-                            </div>
-                        </Dialog.Content>
+                            </Dialog.Content>
+                        </div>
                     </Dialog.Portal>
                 </div>
             </Dialog.Root>
         </div>
     )
-}
-
-NavigationLinks.propTypes = {
-    isMobile: PropTypes.bool,
-}
-
-LinkWrapper.propTypes = {
-    isMobile: PropTypes.bool,
-    children: PropTypes.node.isRequired,
 }

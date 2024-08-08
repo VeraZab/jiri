@@ -1,7 +1,16 @@
-import styles from '/styles/section.module.css'
-import PropTypes from 'prop-types'
+import React, { ReactNode } from 'react'
 
-export default function Section({ children, id, backgroundImage }) {
+import styles from '/styles/section.module.css'
+
+export default function Section({
+    children,
+    id,
+    backgroundImage,
+}: {
+    children: ReactNode
+    id?: string
+    backgroundImage?: string
+}) {
     return (
         <section
             className={
@@ -19,10 +28,4 @@ export default function Section({ children, id, backgroundImage }) {
             {children}
         </section>
     )
-}
-
-Section.propTypes = {
-    children: PropTypes.node,
-    id: PropTypes.string.isRequired,
-    backgroundImage: PropTypes.string,
 }

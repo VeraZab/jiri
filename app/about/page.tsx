@@ -1,6 +1,5 @@
 import styles from '/styles/about.module.css'
 import Section from '../Section'
-import PortfolioPageLayout from '../PortfolioPageLayout'
 
 export default function HomePage() {
     return (

@@ -1,8 +1,15 @@
-import styles from '/styles/portfolioimage.module.css'
+import { ReactNode } from 'react'
 import Image from 'next/image'
-import PropTypes from 'prop-types'
 
-const PortfolioLinkWrapper = ({ externalUrl, children }) => {
+import styles from '/styles/portfolioimage.module.css'
+
+const PortfolioLinkWrapper = ({
+    externalUrl,
+    children,
+}: {
+    externalUrl: string
+    children: ReactNode
+}) => {
     if (externalUrl) {
         return (
             <a
@@ -18,7 +25,17 @@ const PortfolioLinkWrapper = ({ externalUrl, children }) => {
     return <div className={styles.link}>{children}</div>
 }
 
-export default function PortfolioImage({ src, alt, externalUrl, text }) {
+export default function PortfolioImage({
+    src,
+    alt,
+    externalUrl,
+    text,
+}: {
+    src: string
+    alt: string
+    externalUrl?: string
+    text?: string
+}) {
     return (
         <div className={styles.container}>
             <PortfolioLinkWrapper externalUrl={externalUrl}>
@@ -36,11 +53,4 @@ export default function PortfolioImage({ src, alt, externalUrl, text }) {
             </PortfolioLinkWrapper>
         </div>
     )
-}
-
-PortfolioImage.propTypes = {
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    externalUrl: PropTypes.string,
-    text: PropTypes.string,
 }

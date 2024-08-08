@@ -1,3 +1,5 @@
+import { ReactNode } from 'react'
+
 import '/styles/reset.css'
 import '/styles/global.css'
 import Header from './Header'
@@ -7,7 +9,7 @@ export const metadata = {
     description: 'Portfolio website of Jiri Kilevnik',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
             <head>
