@@ -38,7 +38,7 @@ const LinkWrapper = ({
     isMobile,
 }: {
     children: ReactNode
-    isMobile: boolean
+    isMobile?: boolean
 }) => {
     if (isMobile) {
         return <Dialog.Close asChild>{children}</Dialog.Close>
@@ -81,6 +81,14 @@ const NavigationLinks = ({ isMobile }: { isMobile?: boolean }) => {
                     href="/film"
                 >
                     Film
+                </Link>
+            </LinkWrapper>
+            <LinkWrapper isMobile={isMobile}>
+                <Link
+                    className={pathname === '/reels' ? styles.active : ''}
+                    href="/reels"
+                >
+                    Reels
                 </Link>
             </LinkWrapper>
             <LinkWrapper isMobile={isMobile}>

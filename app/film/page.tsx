@@ -1,24 +1,28 @@
 import PortfolioGrid from '../PortfolioGrid'
-import PortfolioImage from '../PortfolioImage'
+import PortfolioItem from '../PortfolioItem'
 import PortfolioPageLayout from '../PortfolioPageLayout'
 
 export default function FilmProjects() {
     return (
         <PortfolioPageLayout>
             <PortfolioGrid>
-                <PortfolioImage
+                <PortfolioItem
+                    type="image"
                     src="/images/shangshi.webp"
                     alt="shang-chi: the legend of the ten rings - movie poster"
                 />
-                <PortfolioImage
+                <PortfolioItem
+                    type="image"
                     src="/images/weeknd.jpg"
                     alt="spotify x the weeknd - alone with me interractive experience"
                 />
-                <PortfolioImage
+                <PortfolioItem
+                    type="image"
                     src="/images/2k24.webp"
                     alt="WWE 2K24 game cover features Cody Rhodes, Rhea Ripley and Bianca Belair"
                 />
-                <PortfolioImage
+                <PortfolioItem
+                    type="image"
                     src="/images/footballverse.jpeg"
                     alt="Nike: The Footballverse campaign"
                 />

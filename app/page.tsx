@@ -8,7 +8,7 @@ import styles from '/styles/home.module.css'
 
 export default function HomePage() {
     const [muted, setMuted] = useState(true)
-    const videoRef = useRef(null)
+    const videoRef = useRef<HTMLVideoElement>(null)
 
     const handleUnmuteClick = () => {
         setMuted((currentState) => !currentState)
