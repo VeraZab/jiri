@@ -33,7 +33,7 @@ export default function HomePage() {
                         <b>Awards:</b>
 
                         {
-                            ' VES Awards Nomination, Cannes Lions, VR Fest Winner, AEAF 2020, Promax BDA, The One Show, D&D'
+                            ' VES Awards Nomination, Cannes Lions, VR Fest Winner, AEAF 2020, Promax BDA, The One Show, D&D Pencil'
                         }
                     </p>
                 </div>
