@@ -1,5 +1,4 @@
 .header {
-    font-family: 'Roboto Mono';
     width: 100%;
     position: fixed;
     top: 0px;
@@ -17,6 +16,8 @@
 }
 
 .title {
+    font-size: 1.75rem;
+    font-family: 'Moderustic';
     min-width: 30%;
     display: flex;
     justify-content: left;

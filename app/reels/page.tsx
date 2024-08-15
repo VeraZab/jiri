@@ -1,24 +1,24 @@
 import PortfolioGrid from '../PortfolioGrid'
-import PortfolioItem from '../PortfolioItem'
 import PortfolioPageLayout from '../PortfolioPageLayout'
 
 export default function Reels() {
     return (
         <PortfolioPageLayout>
             <PortfolioGrid>
-                <PortfolioItem
-                    type="video"
-                    src="/videos/reel-ads.mp4"
-                    alt="reel of ai and ad projects"
-                    text="Advertising & AI Reel"
-                    posterSrc="/images/advertising&ai.png"
+                <iframe
+                    src="https://player.vimeo.com/video/997542561?h=7341f5f46e"
+                    width="640"
+                    height="360"
+                    allow="fullscreen; picture-in-picture"
+                    frameBorder="0"
                 />
-                <PortfolioItem
-                    type="video"
-                    src="/videos/reel-film.mp4"
-                    alt="reel of film and episodic projects"
-                    text="Film & TV Reel"
-                    posterSrc="/images/film&tv.png"
+
+                <iframe
+                    src="https://player.vimeo.com/video/997542533?h=d304bceb70"
+                    width="640"
+                    height="360"
+                    allow="fullscreen; picture-in-picture"
+                    frameBorder="0"
                 />
             </PortfolioGrid>
         </PortfolioPageLayout>
