@@ -104,8 +104,18 @@ const NavigationLinks = ({ isMobile }: { isMobile?: boolean }) => {
 }
 
 export default function Header() {
+    const pathname = usePathname()
+    const isHomePage = pathname === '/'
     return (
-        <div className={styles.header}>
+        <div
+            className={styles.header}
+            style={{
+                color: isHomePage ? 'white' : 'black',
+                background: isHomePage
+                    ? 'transparent'
+                    : 'rgb(255, 255, 255, 0.4)',
+            }}
+        >
             <div className={styles.desktop}>
                 <NavigationLinks />
             </div>

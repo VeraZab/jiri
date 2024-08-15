@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 />
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
                 <title>Jiri Kilevnik</title>
-                {/* <link rel="icon" href="./ui/favicon.ico" type="image/x-icon" /> */}
+                <link rel="icon" href="./favicon.ico" type="image/x-icon" />
             </head>
 
             <body>
