@@ -30,13 +30,11 @@ export default function PortfolioItem({
     alt,
     externalUrl,
     text,
-    posterSrc,
 }: {
     src: string
     alt: string
     externalUrl?: string
     text?: string
-    posterSrc?: string
 }) {
     return (
         <div className={styles.container}>
