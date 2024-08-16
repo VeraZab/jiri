@@ -1,7 +1,7 @@
 .container {
     height: 100%;
     padding-top: 100px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .caption {
