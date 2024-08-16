@@ -7,6 +7,12 @@ export default function AdvertisingProjects() {
         <PortfolioPageLayout>
             <PortfolioGrid>
                 <PortfolioItem
+                    src="/images/carmax.png"
+                    alt="CarMax X BeetleMax"
+                    text="Carmax X BeetleMax"
+                    externalUrl="https://www.youtube.com/watch?v=_yFzsyc2kjY"
+                />
+                <PortfolioItem
                     src="/images/will2.png"
                     alt="GM x Will Ferrell x Netflix x Superbowl"
                     text="GM x Will Ferrell x Netflix x Superbowl"
