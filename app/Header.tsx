@@ -119,9 +119,11 @@ export default function Header() {
             <div className={styles.desktop}>
                 <NavigationLinks />
             </div>
+
             <h1 className={styles.title}>
                 <Link href="/">Jiri Kilevnik</Link>
             </h1>
+
             <div className={styles.desktop}>
                 <SocialLinks />
             </div>

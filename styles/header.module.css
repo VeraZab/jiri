@@ -7,22 +7,23 @@
     justify-content: space-between;
     padding: 0 1rem;
     z-index: 3;
+    height: 4rem;
 }
 
 .left {
-    min-width: 40%;
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
 }
 
 .title {
     font-size: 1.75rem;
     font-family: 'Moderustic';
-    min-width: 30%;
-    display: flex;
-    justify-content: left;
-}
-
-.right {
-    min-width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .left a,
@@ -66,29 +67,14 @@
     display: none;
 }
 
-@media (max-width: 1370px) {
-    .left {
-        min-width: 50%;
-    }
-
-    .right,
-    .title {
-        min-width: 25%;
-    }
-
-    .title {
-        text-align: left;
-    }
-}
-
-@media (max-width: 960px) {
+@media (max-width: 1330px) {
     .desktop {
         display: none;
     }
 
     .title {
         width: unset;
-        padding-left: 0;
+        justify-content: left;
     }
 
     .mobile {
