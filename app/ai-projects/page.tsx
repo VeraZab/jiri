@@ -10,16 +10,19 @@ export default function AIProjects() {
                     src="/images/2k24.webp"
                     alt="WWE 2K24 game cover features Cody Rhodes, Rhea Ripley and Bianca Belair"
                     externalUrl="https://www.youtube.com/watch?v=t8961pFrH-I"
+                    text="WWE x 2K24"
                 />
                 <PortfolioItem
                     src="/images/footballverse.jpeg"
                     alt="Nike: The Footballverse campaign"
                     externalUrl="https://www.framestore.com/work/footballverse"
+                    text="Nike: The Footballverse"
                 />
                 <PortfolioItem
                     src="/images/shangshi.webp"
                     alt="shang-chi: the legend of the ten rings - movie poster"
                     externalUrl="https://www.youtube.com/watch?v=Oa1SpVpgW_c"
+                    text="Shang-Chi: The Legend of the Ten Rings"
                 />
                 <PortfolioItem
                     src="/images/weeknd.png"

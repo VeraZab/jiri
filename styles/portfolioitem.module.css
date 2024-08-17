@@ -1,13 +1,10 @@
 .container {
-    flex: 1 1 300px;
-    height: 500px;
     background-color: var(--color-gray-300);
     border-radius: 4px;
     position: relative;
     overflow: hidden;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
     transition: box-shadow 0.3s ease-in-out;
+    aspect-ratio: 3/4;
 }
 
 .container:hover {
@@ -36,12 +33,4 @@
 
 .link {
     height: 100%;
-}
-
-.video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-    opacity: 1;
 }
